@@ -1,0 +1,611 @@
+*{
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: "MullerRegular";
+    src: url("fonts/MullerRegular.woff") format("woff");
+    font-display: swap;
+    font-style: normal;
+    font-weight: 300;
+}
+
+html,
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "MullerRegular";
+    background-color: #f1f1f1;
+}
+:root {
+    --main-color-but: #cc9933;
+    --main-color-text:  #333333;
+    --main-color-title: #333333;
+    --main-color-link: #cc9933;
+  }
+a{
+    text-decoration: none;
+    color: inherit;
+}
+img{
+    max-width: 100%;
+}
+ul{
+    padding: 0;
+    list-style: none;
+}
+h2{
+  font-size: 40px;
+  font-family: "MullerRegular";
+  color: #333333;
+}
+.num_span{
+    color: #cc9933;
+    margin-left: 10px;
+}
+.heder_ul{
+    font-size: 16px;
+    font-family: "mullerRegular";
+}
+    
+.heder_link{
+    font-size: 16px;
+    color: var(--main-color-link);
+    margin-left: auto;
+    background-image: url("img/Слой 1.png");
+    background-size: 16px;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+}
+.heder_link:hover{
+    color: #000;
+}
+.list_btn{
+    background-color:var(--main-color-but);
+    color: #ffffff;
+    font-size: 16px;
+    width: 160px;
+    height: 70px;
+    border: 1px solid #cc9933;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.list_btn:hover{
+    box-shadow: 0 0 0 2px #D2973D inset, 0 0 0 4px white inset;
+}
+.list_ul_btn{
+    border-radius: 12px;
+    background-color: #ffffff;
+    width: 520px;
+    height: 70px;
+    font-size: 17px;
+    font-family: "MullerRegular";
+    border: 1px solid #ffffff ;
+    color: #2c2b2b;
+    text-align: left;
+    margin-top: 24px;     
+}
+.input::placeholder{
+    color: #999999;  
+}
+.list_ul{
+    margin-bottom: 20px;
+    margin-top: 0;  
+  }
+  .header_conteiner{
+      display: flex;
+      align-items: center;
+  }
+.nav{
+    margin-top: 30px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #ffffff;
+    justify-content: space-between;
+}
+.heder_ul{
+    display: flex;
+    font-size: 16px;
+    color: #666666;
+    font-family: "MullerRegular";
+}
+.heder_il:hover{
+    color: #cc9933;    
+}
+.heder_il:not(:first-child){
+    margin-left: 50px;
+}
+.heder_il:first-child{
+    margin-left: 20px;
+}
+.heder_button{
+    margin-right: 20px;
+    width: 350px;
+    height: 50px;
+    font-size: 14px;
+    font-family: "MullerRegular";
+    border: 1px solid #f1f1f1;
+    color: #bebebe;
+    text-align: left ;
+    border-radius: 12px;
+    display: flex;
+    background-color: #f1f1f1;
+    padding-right: 50px;   
+}
+.searh_btm{
+    width: 30px;
+    height: 30px;
+    background-image: url(img/search.png);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    border: #f1f1f1;
+    position: relative;
+    left: 310px;
+    bottom: 35px;
+    cursor: pointer;
+}
+.searh_box{
+    width: 350px;
+    height: 50px;
+}
+.btn_img{
+   margin-left:   auto;
+}
+.header_conteiner{
+    margin-bottom: 30px;
+}
+.tel{
+    margin-left: 25px;
+    color: #666666;
+    font-size: 22px;
+}
+.section_one{
+    display: flex;
+    margin-top: 36px;
+}
+div.img{
+    background: url(img/22.jpg) no-repeat;
+    height: 600px;
+    width: 596px;
+}
+.section_one_h2{
+   margin-left: 45px; 
+   margin-bottom: 0em;
+}
+.prod_h2{
+    margin-bottom: 20px;
+}
+.prod_h1{
+    font-family:"MullerRegular";
+    font-weight: 600;
+    font-size:   66px;
+    line-height: 58px;
+    color: #ffffff;
+    padding-top: 240px;
+    padding-left: 60px;
+    margin-top: 0px; 
+}
+.prod_span{
+    font-family:"MullerRegular" ;
+    color: #ffffff;
+    font-size: 35px;
+    opacity: .5;
+    margin: 40px;
+}
+.prod_link{
+    color:var(--main-color-link);
+    font-size: 20px;
+    font-family: "MullerRegular";
+    background-image: url("img/Прямоугольник 2 копия 12.png");
+    background-repeat: no-repeat;
+    background-position: 120px;
+    padding-right: 20px;
+    
+}
+.prod_btn_hov:hover, .box_link:hover{
+    display: inline-block;
+    transform:  translateX(5px);
+    transition: .3s linear;   
+}   
+.text{
+    color: var(--main-color-text);
+    font-family: "MullerRegular";
+    font-size: 16px;
+    line-height: 32px;
+    text-align: left;
+}
+.main_h{
+    margin-top:0 px;
+}
+.box_ul{
+    display: flex;
+    flex-wrap: wrap;   
+}
+.ttt{
+background-color: #ffffff;
+border-radius: 12px;
+width: 567px;
+height: 330px;
+margin: 12px;
+padding-left: 0px;
+padding-right: 0px;
+}
+.rr{
+    margin-right: 0px;
+}
+.services{
+    padding: 30px 30px 0px;
+    flex-grow: 1;
+}
+.box_link{
+    color:var(--main-color-link);
+    font-size: 22px;
+    font-family: "MullerRegular";
+    background-image: url("img/Прямоугольник 2 копия 12.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 20px;
+}
+.box_text{
+    color: var(--main-color-text);
+    font-size: 16px;
+    font-family: "MullerRegular";
+    line-height: 32px;
+}
+
+.advantages{
+    display: flex;
+    flex-wrap: wrap;   
+}
+.box_twoo{
+    width: 275px;
+    height: 280px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    margin: 10px;
+    padding: 40px 40px 0px;
+}
+.advan{
+    margin-right: 0px;
+}
+.box_twoo_text{
+    color: var(--main-color-text);
+    font-size: 16px;
+    font-family: "MullerRegular";
+    line-height: 32px;
+}
+.box_th_a{
+    display: inline-flex;
+}
+.box_th_b{
+    display: inline-flex;
+}
+.box_th_c{
+    display: inline-flex;
+}
+.box_th{
+    height: 440px;
+    width: 370px;
+    margin: 12px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.star{
+    display: flex;
+    height: 10px;
+    width: 70px;
+}
+  
+.list_p{
+    font-size: 25px;
+    font-family:"MullerRegular";
+    line-height: 32px;
+    color: var(--main-color-text);
+    align-items: center;
+
+}
+.list_l{
+    font-size: 16px;
+    font-family:"MullerRegular";
+    line-height: 32px;
+    color: var(--main-color-text);
+
+}
+.list_sp{
+    font-size: 16px;
+    font-family:"MullerRegular";
+    line-height: 32px;
+    color: #bebebe;
+
+}
+.nt{
+    font-size: 16px;
+    font-family:"MullerRegular";
+    line-height: 32px;
+    color: var(--main-color-text);
+
+}
+.ot{
+    font-size: 16px;
+    font-family:"MullerRegular";
+    line-height: 32px;
+    color: #bebebe;
+}
+.butt{
+    border: #cc9933 1px solid;
+    border-radius: 12px;
+    background-color: #ffffff;
+    font-size: 16px;
+    width: 100px;
+    height: 40px;
+    color: var(--main-color-but);
+    font-family: "MullerRegular";
+    font-weight: 500;
+    margin-top: 20px;
+    cursor: pointer;
+    
+}
+.butt:hover{
+    box-shadow: 100px 0 0 0 #cc9933 inset;
+    transition: .3s linear;
+    color: #ffffff;
+}
+
+.back_link{
+    background: url(img/41.jpg) no-repeat;
+    height: 440px;
+    width: 370px;
+    margin: 12px;
+    border-radius: 12px;
+    position: relative;
+}
+.box_th_link{
+    font-size: 22px;
+    color: #ffffff;
+    font-family: "MullerRegular";
+    font-weight: 300;
+    background-image: url("img/Прямоугольник 2 копия 16.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 15px;
+    
+}
+.stretched-link::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.back_but{
+    margin-top: 370px;
+    background: none;
+    margin-left: 40px;
+    border: none;
+    cursor: pointer;
+}
+.star{
+    float: right;
+    margin-top: 15px;
+    align-items: center;
+    width: 100px;
+}
+.sstar{
+    margin-right: 7px;
+}
+.rectangle{
+    height: 15px;
+}
+.placement{
+    display: flex;
+    flex-wrap: wrap;
+}
+.ppp{
+    margin-right: 0px;
+}
+input{
+    outline:none;
+}
+button{
+    outline: none;
+}
+.placement_card{
+    padding: 30px;
+    
+}
+.info{
+    display: flex;
+  flex-direction: row;
+}
+.contacts_info{
+    width: 475px;
+    height: 620px;
+    color: var(--main-color-text);
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 45px;
+    flex-direction: column;
+    margin-left: 12px;
+}
+.cont_li{
+    height: 100px;
+    display: flex;
+    align-content: flex-start;
+}
+.cont_div{
+    text-align: left;
+}
+.cont_pp{
+    font-size: 16px;
+    color: #666666;
+    font-family: "MullerRegular";
+    font-weight: 600;
+    margin-top: 0;
+}
+.cont_ppp{
+    font-size: 16px;
+    color: var(--main-color-text);
+    font-family: "MullerRegular";
+    font-weight: 600;
+    flex-basis: 60%;
+}
+.cont_p{
+    margin-top: 0;
+    font-size: 22px;
+    color: #666666;
+    width: 90px;
+    flex-basis: 40%;
+}
+.fb{
+    margin-top: 0;
+}
+.cont_btn{
+    border: #cc9933 1px solid ;
+    border-radius: 12px;
+    font-size: 16px;
+    color: var(--main-color-but);
+    font-family: "MullerRegular";
+    font-weight: 600;
+    background-color: #ffffff;
+    width: 200px;
+    height: 60px;
+}
+.feedback{
+    width: 350px;
+    align-items: center;
+    margin-left:  180px;
+    margin-top: 190px;
+
+}
+.feed_h2{
+    margin: 0px;
+    text-align: center;
+}
+.feed_li{
+    border-radius: 12px;
+    background-color: #ffffff;
+    width: 340px;
+    height: 70px;
+    font-size: 17px;
+    font-family: "MullerRegular";
+    border: 1px solid #ffffff ;
+    color: #2c2b2b;
+    text-align: left;
+    margin-top: 24px;
+
+}
+.feed_text{
+    border-radius: 12px;
+    background-color: #ffffff;
+    width: 340px;
+    height: 110px;
+    font-size: 17px;
+    font-family: "MullerRegular";
+    border: 1px solid #ffffff ;
+    color: #2c2b2b;
+    text-align: left;
+    margin-top: 24px;
+
+}
+.feed_btn{
+    border: #cc9933 1px solid ;
+    border-radius: 12px;
+    font-size: 16px;
+    color: #ffffff;
+    font-family: "MullerRegular";
+    font-weight: 600;;
+    background-color: #cc9933;
+    width: 340px;
+    height: 60px;
+}
+.feed_btn:hover{
+    box-shadow: 0 0 0 2px #D2973D inset, 0 0 0 4px white inset;
+    cursor: pointer;
+}
+.footer{
+    margin-top: 20px;
+    height: 340px;
+    background-color: #333333;
+    border-radius: 12px;
+   
+}
+.footer_box{
+    height: 340px;
+    padding: 50px;
+    display: flex; 
+    background-image: url(img/Слой\ 27\ копия@2x.png);
+    background-repeat: no-repeat;
+    background-size: 258px;
+    background-position: right 170px bottom 0px;
+}
+.footer_info{
+    padding-right: 120px;
+    
+   
+}
+.footer_info_li{
+    padding-bottom: 30px;
+    font-size: 16px;
+    color: #f1f1f1;
+    line-height: 32px;
+    font-family: "MullerRegular";
+    font-weight: 600;;
+}
+.footer_link{
+    font-size: 16px;
+    font-family: "MullerRegular";
+    font-weight: 600;;
+    color: var(--main-color-link);
+}
+
+.footer_addres{
+    padding-right: 260px;
+}
+.face{
+    width: 25px;
+    height: 25px;
+    margin-bottom: 20px;
+}
+.hr{
+    margin-top: 0;
+}
+.footer_link:hover{
+    color: #2c2b2b;
+}
+.cont_btn:hover{
+    box-shadow: 200px 0 0 0 #cc9933 inset;
+    transition: .3s linear;
+    color: #ffffff;
+    cursor: pointer;
+}
+.imgg{
+    height: 163px;
+    width: 567px;
+    border-radius: 15px 15px 0px 0px;
+}
+.border-hr{
+    border-top: 2px solid black;
+  padding-top: 25px;
+}
+.box_img{
+border-radius: 12px 12px 0px 0px;
+}
+input{
+    text-indent: 7px
+}
+.conteiner-xxl{
+    padding-left: 20px;
+}
+.row{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.wor{
+    width: 100%;
+}
